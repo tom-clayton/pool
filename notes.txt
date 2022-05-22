@@ -1,0 +1,18 @@
+W       f9ebc8
+8       0c0b0f
+1/9     fcb928
+2/10    193186
+3/11    fd3451
+4/12    2c184b
+5/13    fa3d29
+6/14    14373a
+7/15    511b21
+
+
+text 100
+
+circle @415, r250
+
+rectangle  @300, h480
+
+Gentium basic bold

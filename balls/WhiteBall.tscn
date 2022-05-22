@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://balls/BallBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://balls/BallMesh.tscn" type="PackedScene" id=2]
+[ext_resource path="res://balls/WhiteBall.gd" type="Script" id=3]
+
+[sub_resource type="SphereMesh" id=1]
+radius = 0.03
+height = 0.06
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.933333, 0.0941176, 0.0941176, 0.0901961 )
+
+[sub_resource type="CylinderMesh" id=4]
+material = SubResource( 3 )
+top_radius = 0.005
+bottom_radius = 0.005
+
+[sub_resource type="CylinderShape" id=5]
+radius = 2.0
+height = 0.03
+
+[node name="Spatial" type="Spatial"]
+
+[node name="WhiteBall" parent="." instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+POWER_RATE = 20
+MAX_POWER = 20
+
+[node name="BallMesh" parent="WhiteBall" instance=ExtResource( 2 )]
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="SightRayCast" type="RayCast" parent="WhiteBall"]
+
+[node name="Sight" type="Spatial" parent="WhiteBall"]
+
+[node name="Beam" type="MeshInstance" parent="WhiteBall/Sight"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, -1 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Timer" type="Timer" parent="WhiteBall"]
+
+[node name="CueArea" type="Area" parent="WhiteBall"]
+
+[node name="CollisionShape" type="CollisionShape" parent="WhiteBall/CueArea"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.015, 0 )
+shape = SubResource( 5 )
+
+[node name="CuePlacer" type="RayCast" parent="WhiteBall"]
+collide_with_areas = true
+collide_with_bodies = false
+[connection signal="timeout" from="WhiteBall/Timer" to="WhiteBall" method="_on_Timer_timeout"]

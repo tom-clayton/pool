@@ -1,0 +1,250 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://balls/textures/14.png" type="Texture" id=1]
+[ext_resource path="res://balls/textures/6.png" type="Texture" id=2]
+[ext_resource path="res://balls/textures/15.png" type="Texture" id=3]
+[ext_resource path="res://HSlider.gd" type="Script" id=4]
+[ext_resource path="res://Table.tscn" type="PackedScene" id=5]
+[ext_resource path="res://balls/BallBase.tscn" type="PackedScene" id=6]
+[ext_resource path="res://balls/textures/9.png" type="Texture" id=7]
+[ext_resource path="res://balls/textures/10.png" type="Texture" id=8]
+[ext_resource path="res://balls/textures/4.png" type="Texture" id=9]
+[ext_resource path="res://balls/WhiteBall.tscn" type="PackedScene" id=10]
+[ext_resource path="res://balls/textures/3.png" type="Texture" id=11]
+[ext_resource path="res://balls/textures/2.png" type="Texture" id=12]
+[ext_resource path="res://balls/textures/1.png" type="Texture" id=13]
+[ext_resource path="res://balls/textures/5.png" type="Texture" id=14]
+[ext_resource path="res://balls/BallMesh.tscn" type="PackedScene" id=15]
+[ext_resource path="res://balls/textures/13.png" type="Texture" id=16]
+[ext_resource path="res://balls/textures/12.png" type="Texture" id=17]
+[ext_resource path="res://balls/textures/7.png" type="Texture" id=18]
+[ext_resource path="res://balls/textures/11.png" type="Texture" id=19]
+[ext_resource path="res://balls/textures/8.png" type="Texture" id=20]
+[ext_resource path="res://Label.gd" type="Script" id=21]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 13 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 12 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 11 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 9 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 14 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 2 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 18 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 20 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 7 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 8 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 19 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 17 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 16 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 1 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_color = Color( 0.976471, 0.921569, 0.784314, 1 )
+albedo_texture = ExtResource( 3 )
+roughness = 0.0
+uv1_scale = Vector3( 2, 1, 1 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.596407, 0.802682, 0, -0.802682, -0.596407, 0, 2.30724, -1.13453 )
+light_color = Color( 0.254902, 0.247059, 0.247059, 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -1.62921e-07, -1, -1.62921e-07, 0, -1.62921e-07, 1, -1, 1.62921e-07, 2.65433e-14, 0, 5.5, 0 )
+current = true
+fov = 20.0
+
+[node name="Table" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 119.0
+margin_bottom = 33.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="VSlider" parent="Control"]
+margin_right = 118.0
+margin_bottom = 337.0
+max_value = 250.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+anchor_top = 0.526
+anchor_bottom = 0.526
+margin_left = 1.0
+margin_top = -0.358002
+margin_right = 48.0
+margin_bottom = 13.642
+text = "0"
+script = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="01Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.335751 )
+
+[node name="MeshInstance" parent="01Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 1 )
+
+[node name="02Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0618561, 0, 0.456207 )
+
+[node name="MeshInstance" parent="02Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 2 )
+
+[node name="03Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0781341, 0, 0.575036 )
+
+[node name="MeshInstance" parent="03Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 3 )
+
+[node name="04Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.463967, 0, -0.101355 )
+mass = 16.87
+
+[node name="MeshInstance" parent="04Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 4 )
+
+[node name="05Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0358114, 0, 0.395979 )
+
+[node name="MeshInstance" parent="05Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 5 )
+
+[node name="06Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.141618, 0, 0.571781 )
+
+[node name="MeshInstance" parent="06Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 6 )
+
+[node name="07Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0325558, 0, 0.514808 )
+
+[node name="MeshInstance" parent="07Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 7 )
+
+[node name="08Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00162777, 0, 0.45458 )
+
+[node name="MeshInstance" parent="08Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 8 )
+
+[node name="09Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0992954, 0, 0.514808 )
+
+[node name="MeshInstance" parent="09Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 9 )
+
+[node name="10Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0732507, 0, 0.456207 )
+
+[node name="MeshInstance" parent="10Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 10 )
+
+[node name="11Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0358114, 0, 0.394351 )
+
+[node name="MeshInstance" parent="11Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 11 )
+
+[node name="12Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.144874, 0, 0.573409 )
+
+[node name="MeshInstance" parent="12Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 12 )
+
+[node name="13Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.573409 )
+
+[node name="MeshInstance" parent="13Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 13 )
+
+[node name="14Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0374392, 0, 0.516436 )
+
+[node name="MeshInstance" parent="14Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 14 )
+
+[node name="15Ball" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0683673, 0, 0.573409 )
+
+[node name="MeshInstance" parent="15Ball" instance=ExtResource( 15 )]
+material/0 = SubResource( 15 )
+
+[node name="WhiteBall" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.74492 )
